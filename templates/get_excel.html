@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h2>get_excel</h2>
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+  <form action="{{ url_for('download') }}" method=post>
+    <dl>
+      <dt>code:
+      <dd><input type=text name=code>
+      <dt>type:
+      <dd><input type=text name=type>
+      <dd><input type=submit value=submit>
+    </dl>
+  </form>
+{% endblock %}

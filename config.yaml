@@ -1,0 +1,58 @@
+excel:
+    name : demo
+
+table:
+    settlement :
+        raw :
+            TradingDay : 交易日
+            PositionProfit : 持仓盈亏
+            CloseProfit : 平仓盈亏
+            Commission : 手续费
+            Deposit : 入金
+            Withdraw : 出金
+            Available : 可用资金
+            Balance : 总资产
+        all :
+            TradingDay : 交易日
+            PositionProfit : 持仓盈亏
+            CloseProfit : 平仓盈亏
+            Commission : 手续费
+            Deposit : 入金
+            Withdraw : 出金
+            Deposit&Withdraw : 出入金
+            Available : 可用资金
+            Balance : 总资产
+            NetProfit : 盈亏
+            CumNetProfit : 累计盈亏
+            CumCommission : 累计手续费
+            CumNetProfit/CumCommission : 累计盈亏/累计手续费
+            RiskLevel : 风险度
+            Share : 份数
+            NetWorth : 净值
+    position :
+        raw :
+            TradingDay : 交易日
+            PosiDirection : 方向
+            Position : 今仓
+            InstrumentCode : 合约
+        all :
+            TradingDay : 交易日
+            PosiDirection : 方向
+            Position : 今仓
+            InstrumentCode : 合约
+            ProductCode : 品种
+            LongPosition : 多仓
+            ShortPosition : 空仓
+            NetPosition : 净持仓
+
+mysql:
+    host : "192.168.1.99"
+    port : 3306
+    user : 'replay'
+    passwd : 'replay'
+    db : 'dataunload_9379'
+    # host : "115.28.178.121"
+    # port : 3306
+    # user : 'hqy'
+    # passwd : 'hqy'
+    # db : 'dataunload_9379'
